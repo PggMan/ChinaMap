@@ -13,14 +13,15 @@
 		64755456217D6C6A002EAC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64755455217D6C6A002EAC16 /* Assets.xcassets */; };
 		64755459217D6C6A002EAC16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64755457217D6C6A002EAC16 /* LaunchScreen.storyboard */; };
 		6475545C217D6C6A002EAC16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6475545B217D6C6A002EAC16 /* main.m */; };
-		647554D2217D9C40002EAC16 /* ProvincialName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647554D0217D9C40002EAC16 /* ProvincialName.plist */; };
-		647554D3217D9C40002EAC16 /* ChinaMapPaths.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647554D1217D9C40002EAC16 /* ChinaMapPaths.plist */; };
 		647554D6217D9DD8002EAC16 /* PGChinaMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 647554D5217D9DD8002EAC16 /* PGChinaMap.m */; };
 		647554D9217DA629002EAC16 /* PGChinaMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 647554D8217DA629002EAC16 /* PGChinaMapModel.m */; };
+		647554DD217F2022002EAC16 /* ProvincialName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647554DB217F2022002EAC16 /* ProvincialName.plist */; };
+		647554DE217F2022002EAC16 /* ChinaMapPaths.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647554DC217F2022002EAC16 /* ChinaMapPaths.plist */; };
+		647554E0217F2030002EAC16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 647554DF217F2030002EAC16 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		64755449217D6C69002EAC16 /* PGChinaMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGChinaMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64755449217D6C69002EAC16 /* ChinaMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChinaMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6475544C217D6C69002EAC16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6475544D217D6C6A002EAC16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6475544F217D6C6A002EAC16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -30,12 +31,13 @@
 		64755458217D6C6A002EAC16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6475545A217D6C6A002EAC16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6475545B217D6C6A002EAC16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		647554D0217D9C40002EAC16 /* ProvincialName.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ProvincialName.plist; sourceTree = "<group>"; };
-		647554D1217D9C40002EAC16 /* ChinaMapPaths.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ChinaMapPaths.plist; sourceTree = "<group>"; };
 		647554D4217D9DD8002EAC16 /* PGChinaMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGChinaMap.h; sourceTree = "<group>"; };
 		647554D5217D9DD8002EAC16 /* PGChinaMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGChinaMap.m; sourceTree = "<group>"; };
 		647554D7217DA629002EAC16 /* PGChinaMapModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGChinaMapModel.h; sourceTree = "<group>"; };
 		647554D8217DA629002EAC16 /* PGChinaMapModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGChinaMapModel.m; sourceTree = "<group>"; };
+		647554DB217F2022002EAC16 /* ProvincialName.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ProvincialName.plist; sourceTree = "<group>"; };
+		647554DC217F2022002EAC16 /* ChinaMapPaths.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ChinaMapPaths.plist; sourceTree = "<group>"; };
+		647554DF217F2030002EAC16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		64755440217D6C69002EAC16 = {
 			isa = PBXGroup;
 			children = (
+				647554DF217F2030002EAC16 /* Default-568h@2x.png */,
 				6475544B217D6C69002EAC16 /* PGChinaMap */,
 				6475544A217D6C69002EAC16 /* Products */,
 			);
@@ -60,7 +63,7 @@
 		6475544A217D6C69002EAC16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64755449217D6C69002EAC16 /* PGChinaMap.app */,
+				64755449217D6C69002EAC16 /* ChinaMap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,8 +99,8 @@
 		647554CF217D9C17002EAC16 /* MapDateSource */ = {
 			isa = PBXGroup;
 			children = (
-				647554D1217D9C40002EAC16 /* ChinaMapPaths.plist */,
-				647554D0217D9C40002EAC16 /* ProvincialName.plist */,
+				647554DC217F2022002EAC16 /* ChinaMapPaths.plist */,
+				647554DB217F2022002EAC16 /* ProvincialName.plist */,
 			);
 			path = MapDateSource;
 			sourceTree = "<group>";
@@ -114,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		64755448217D6C69002EAC16 /* PGChinaMap */ = {
+		64755448217D6C69002EAC16 /* ChinaMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6475545F217D6C6A002EAC16 /* Build configuration list for PBXNativeTarget "PGChinaMap" */;
+			buildConfigurationList = 6475545F217D6C6A002EAC16 /* Build configuration list for PBXNativeTarget "ChinaMap" */;
 			buildPhases = (
 				64755445217D6C69002EAC16 /* Sources */,
 				64755446217D6C69002EAC16 /* Frameworks */,
@@ -126,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = PGChinaMap;
+			name = ChinaMap;
 			productName = ChinaMap;
-			productReference = 64755449217D6C69002EAC16 /* PGChinaMap.app */;
+			productReference = 64755449217D6C69002EAC16 /* ChinaMap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 64755444217D6C69002EAC16 /* Build configuration list for PBXProject "PGChinaMap" */;
+			buildConfigurationList = 64755444217D6C69002EAC16 /* Build configuration list for PBXProject "ChinaMap" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64755448217D6C69002EAC16 /* PGChinaMap */,
+				64755448217D6C69002EAC16 /* ChinaMap */,
 			);
 		};
 /* End PBXProject section */
@@ -170,9 +173,10 @@
 			files = (
 				64755459217D6C6A002EAC16 /* LaunchScreen.storyboard in Resources */,
 				64755456217D6C6A002EAC16 /* Assets.xcassets in Resources */,
-				647554D3217D9C40002EAC16 /* ChinaMapPaths.plist in Resources */,
-				647554D2217D9C40002EAC16 /* ProvincialName.plist in Resources */,
+				647554DE217F2022002EAC16 /* ChinaMapPaths.plist in Resources */,
+				647554DD217F2022002EAC16 /* ProvincialName.plist in Resources */,
 				64755454217D6C6A002EAC16 /* Main.storyboard in Resources */,
+				647554E0217F2030002EAC16 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChinaMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PGChinaMap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,7 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ChinaMap/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PGChinaMap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,7 +364,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64755444217D6C69002EAC16 /* Build configuration list for PBXProject "PGChinaMap" */ = {
+		64755444217D6C69002EAC16 /* Build configuration list for PBXProject "ChinaMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6475545D217D6C6A002EAC16 /* Debug */,
@@ -369,7 +373,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6475545F217D6C6A002EAC16 /* Build configuration list for PBXNativeTarget "PGChinaMap" */ = {
+		6475545F217D6C6A002EAC16 /* Build configuration list for PBXNativeTarget "ChinaMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64755460217D6C6A002EAC16 /* Debug */,
