@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "PGChinaMap.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    PGChinaMap *map = [[PGChinaMap alloc] initWithFrame:self.view.bounds];
+    
+    //map.seletedAry = @[@"新疆",@"黑龙江"];
+    map.clickEnable = YES;
+    [self.view addSubview:map];
 }
 
 
