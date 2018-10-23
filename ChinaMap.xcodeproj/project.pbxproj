@@ -14,10 +14,10 @@
 		64755459217D6C6A002EAC16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64755457217D6C6A002EAC16 /* LaunchScreen.storyboard */; };
 		6475545C217D6C6A002EAC16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6475545B217D6C6A002EAC16 /* main.m */; };
 		647554D6217D9DD8002EAC16 /* PGChinaMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 647554D5217D9DD8002EAC16 /* PGChinaMap.m */; };
-		647554D9217DA629002EAC16 /* PGChinaMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 647554D8217DA629002EAC16 /* PGChinaMapModel.m */; };
 		647554DD217F2022002EAC16 /* ProvincialName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647554DB217F2022002EAC16 /* ProvincialName.plist */; };
 		647554DE217F2022002EAC16 /* ChinaMapPaths.plist in Resources */ = {isa = PBXBuildFile; fileRef = 647554DC217F2022002EAC16 /* ChinaMapPaths.plist */; };
 		647554E0217F2030002EAC16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 647554DF217F2030002EAC16 /* Default-568h@2x.png */; };
+		647554E3217F228C002EAC16 /* PGChinaMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 647554E2217F228C002EAC16 /* PGChinaMapModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +33,11 @@
 		6475545B217D6C6A002EAC16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		647554D4217D9DD8002EAC16 /* PGChinaMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGChinaMap.h; sourceTree = "<group>"; };
 		647554D5217D9DD8002EAC16 /* PGChinaMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGChinaMap.m; sourceTree = "<group>"; };
-		647554D7217DA629002EAC16 /* PGChinaMapModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGChinaMapModel.h; sourceTree = "<group>"; };
-		647554D8217DA629002EAC16 /* PGChinaMapModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGChinaMapModel.m; sourceTree = "<group>"; };
 		647554DB217F2022002EAC16 /* ProvincialName.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ProvincialName.plist; sourceTree = "<group>"; };
 		647554DC217F2022002EAC16 /* ChinaMapPaths.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ChinaMapPaths.plist; sourceTree = "<group>"; };
 		647554DF217F2030002EAC16 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		647554E1217F228C002EAC16 /* PGChinaMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGChinaMapModel.h; sourceTree = "<group>"; };
+		647554E2217F228C002EAC16 /* PGChinaMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGChinaMapModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 		647554DA217DA636002EAC16 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				647554D7217DA629002EAC16 /* PGChinaMapModel.h */,
-				647554D8217DA629002EAC16 /* PGChinaMapModel.m */,
+				647554E1217F228C002EAC16 /* PGChinaMapModel.h */,
+				647554E2217F228C002EAC16 /* PGChinaMapModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 				6475545C217D6C6A002EAC16 /* main.m in Sources */,
 				6475544E217D6C6A002EAC16 /* AppDelegate.m in Sources */,
 				647554D6217D9DD8002EAC16 /* PGChinaMap.m in Sources */,
-				647554D9217DA629002EAC16 /* PGChinaMapModel.m in Sources */,
+				647554E3217F228C002EAC16 /* PGChinaMapModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
