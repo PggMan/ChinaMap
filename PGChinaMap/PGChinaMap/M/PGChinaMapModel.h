@@ -6,7 +6,7 @@
 //  Copyright © 2018 印度阿三. All rights reserved.
 //
 
-
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 // 用于设置地图信息
