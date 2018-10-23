@@ -11,4 +11,5 @@ s.author             = { "PggMan" => "pg890101@gmail.com" }
 s.source       = { :git => "https://github.com/PggMan/ChinaMap.git", :tag => s.version }
 s.source_files  = 'PGChinaMap/PGChinaMap/*.{h,m}'
 s.requires_arc = true
+s.framework      = "UIKit"
 end
