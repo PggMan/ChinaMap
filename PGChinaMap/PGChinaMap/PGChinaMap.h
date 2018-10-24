@@ -2,21 +2,17 @@
 //  PGChinaMap.h
 //  ChinaMap
 //
-//  Created by 印度阿三 on 2018/10/22.
+//  Created by 印度阿三 on 2018/10/24.
 //  Copyright © 2018 印度阿三. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "PGChinaMapModel.h"
+#import "PGModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- 地图控件: 高度是由宽度决定的，位置居中。
- */
 @interface PGChinaMap : UIView
 
 /**配置模型*/
-@property(nonatomic,strong) PGChinaMapModel *model;
+@property(nonatomic,strong) PGModel *model;
 
 /**选中省份*/
 @property(nonatomic,strong) NSArray <NSString *>*seletedAry;

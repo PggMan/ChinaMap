@@ -1,15 +1,14 @@
 //
-//  PGChinaMapModel.m
+//  PGModel.m
 //  ChinaMap
 //
-//  Created by 印度阿三 on 2018/10/22.
+//  Created by 印度阿三 on 2018/10/24.
 //  Copyright © 2018 印度阿三. All rights reserved.
 //
 
-#import "PGChinaMapModel.h"
+#import "PGModel.h"
 
-@implementation PGChinaMapModel
-
+@implementation PGModel
 - (UIColor *)backColorD{
     
     
@@ -38,6 +37,5 @@
     
     return _viewColor != nil ? _viewColor:[UIColor grayColor];
 }
-
 
 @end

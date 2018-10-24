@@ -2,12 +2,11 @@
 //  PGChinaMap.m
 //  ChinaMap
 //
-//  Created by 印度阿三 on 2018/10/22.
+//  Created by 印度阿三 on 2018/10/24.
 //  Copyright © 2018 印度阿三. All rights reserved.
 //
 
 #import "PGChinaMap.h"
-
 @interface PGChinaMap ()
 /**地图块贝塞尔曲线数组*/
 @property(nonatomic,strong) NSMutableArray <UIBezierPath *>*pathAry;
@@ -32,7 +31,7 @@
     if (self) {
         
         self.backgroundColor = self.model.viewColor;
-
+        
         CGFloat w = frame.size.width;
         CGFloat scale = w/560.;
         self.transform = CGAffineTransformMakeScale(scale, scale);//宽高伸缩比例
@@ -100,13 +99,13 @@
 }
 
 - (void)selectAction:(NSArray <NSString *>*)seletedAry{
-  
+    
     if (seletedAry.count <= 0) return;
-
+    
     for (int i = 0; i < seletedAry.count; i++) {
         NSString *name = [self.seletedAry objectAtIndex:i];
         if (name.length <= 0) return;
-  
+        
         NSString *value = [self.nameIndexDic objectForKey:name];
         NSString *desc = [NSString stringWithFormat:@"请传入正确省份名, 此 %@ 不正确",name];
         NSAssert((value.integerValue - 1) >= 0,desc);
@@ -116,8 +115,8 @@
         self.colorAry[index] = self.model.backColorH;
     }
     [self setNeedsDisplay];
-
-
+    
+    
 }
 
 // 画地图
@@ -126,7 +125,7 @@
     UIColor* strokeColor = self.model.lineColor;
     
     [self.pathAry enumerateObjectsUsingBlock:^(UIBezierPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-       
+        
         obj.miterLimit = 4;
         obj.lineJoinStyle = kCGLineJoinRound;
         [self.colorAry[idx] setFill];
@@ -169,10 +168,10 @@
 }
 
 #pragma mark - 懒加载
-- (PGChinaMapModel *)model{
+- (PGModel *)model{
     
     if (!_model) {
-        _model = [[PGChinaMapModel alloc] init];
+        _model = [[PGModel alloc] init];
     }
     
     return _model;
@@ -225,42 +224,42 @@
 - (NSDictionary *)nameIndexDic{
     
     if (!_nameIndexDic) {
-            _nameIndexDic = @{
-                              @"黑龙江" : @"1",
-                              @"吉林" : @"2",
-                              @"辽宁" : @"3",
-                              @"河北" : @"4",
-                              @"山东" : @"5",
-                              @"江苏" : @"6",
-                              @"新疆" : @"29",
-                              @"青海" : @"20",
-                              @"西藏" : @"30",
-                              @"四川" : @"18",
-                              @"云南" : @"19",
-                              @"广西" : @"28",
-                              @"甘肃" : @"12",
-                              @"宁夏" : @"26",
-                              @"重庆" : @"23",
-                              @"海南" : @"21",
-                              @"广东" : @"31",
-                              @"澳门" : @"34",
-                              @"香港" : @"32",
-                              @"台湾" : @"33",
-                              @"福建" : @"15",
-                              @"湖南" : @"16",
-                              @"江西" : @"14",
-                              @"浙江" : @"7",
-                              @"上海" : @"22",
-                              @"湖北" : @"13",
-                              @"河南" : @"9",
-                              @"山西" : @"10",
-                              @"陕西" : @"11",
-                              @"北京" : @"24",
-                              @"天津" : @"25",
-                              @"内蒙古" : @"27",
-                              @"安徽" : @"8",
-                              @"江苏" : @"6",
-                              };
+        _nameIndexDic = @{
+                          @"黑龙江" : @"1",
+                          @"吉林" : @"2",
+                          @"辽宁" : @"3",
+                          @"河北" : @"4",
+                          @"山东" : @"5",
+                          @"江苏" : @"6",
+                          @"新疆" : @"29",
+                          @"青海" : @"20",
+                          @"西藏" : @"30",
+                          @"四川" : @"18",
+                          @"云南" : @"19",
+                          @"广西" : @"28",
+                          @"甘肃" : @"12",
+                          @"宁夏" : @"26",
+                          @"重庆" : @"23",
+                          @"海南" : @"21",
+                          @"广东" : @"31",
+                          @"澳门" : @"34",
+                          @"香港" : @"32",
+                          @"台湾" : @"33",
+                          @"福建" : @"15",
+                          @"湖南" : @"16",
+                          @"江西" : @"14",
+                          @"浙江" : @"7",
+                          @"上海" : @"22",
+                          @"湖北" : @"13",
+                          @"河南" : @"9",
+                          @"山西" : @"10",
+                          @"陕西" : @"11",
+                          @"北京" : @"24",
+                          @"天津" : @"25",
+                          @"内蒙古" : @"27",
+                          @"安徽" : @"8",
+                          @"江苏" : @"6",
+                          };
     }
     return _nameIndexDic;
 }
